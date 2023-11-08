@@ -1,0 +1,26 @@
+GET http://localhost:1337/api/products/test
+
+###
+POST http://localhost:1337/api/products
+Content-Type: application/json
+
+{
+    "data":{
+        "name":"peach",
+        "price":2000,
+        "category":2
+    }
+}
+
+###
+GET http://localhost:1337/api/categories
+
+###
+POST http://localhost:1337/api/categories
+Content-Type: application/json
+
+{
+    "data":{
+        "name":"fruits"
+    }
+}
